@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width">
+    <title>Car Carbon Footprint Calculator</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+    <script src=script.js> </script> 
+
+      <style>
+        h1{
+          color: orange;
+        }
+
+        body {
+          background: grey;
+          background-image: url('OrangeTrees-cropped.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          color: white; 
+          font-family: Verdana;
+          padding: 0px;
+          margin: 0px;
+        }
+
+        button{
+          color: brown; 
+          font-family: Verdana;
+          background: lightgreen;
+          border: black;
+          border-radius: 30px;
+          margin: 100px, 10px;
+        }
+
+        header{
+          background: black;
+          padding: 20px;
+        }
+      </style>
+  </head>
+
+
+  <body>
+    
+    
+    <header> Car Carbon Footprint Calculator 
+    </header>
+
+
+    <div id ="container"> 
+        <div id="orangeZone" > </div>
+        
+<div id= "teslaZone" > 
+  <img id = "tesla" 
+  src = "teslaReal.png"
+  width= "10"
+  height = "10">
+     </div> 
+    
+    
+    
+    
+   
+   
+   <br><br>
+    <fieldset>
+      
+	  <legend>Calculate your car's yearly carbon footprint</legend>
+	  <form method="get" name="carboncalculator" onsubmit="return calculateCarbon();">
+      <br>
+
+		<label>Enter your car's mpg:
+		<input size="7" name="mpg" id="mpg"/> mpg</label><br><br>
+		<label>Enter how many miles you've driven this year:
+		<input size="7" name="miles" id="miles"/> miles  
+	  <br><br>
+    <label>Gasoline or Diesel: 
+    <select name = "gas" id = "gas">
+      <option></option>
+      <option>Gasoline</option>
+      <option>Diesel</option>
+    <select/>
+    <br><br>
+    
+    <button  type = "submit"><h3>  Get Carbon Footprint  </button><br>
+	  </form>
+    </fieldset>
+    <br>
+    <fieldset>
+	  <legend>Your car's carbon footprint</legend><br>
+	  <div id="result"></div><br>
+    <div id="report"></div><br>
+    </fieldset>
+  </body>
+
+</html>
