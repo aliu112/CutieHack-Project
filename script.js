@@ -87,11 +87,11 @@
         document.getElementById("report").innerHTML = 'Good job! Your carbon footprint is less than average';
         }
         else if (num>4&&num<5){
-          makeitrainOrange();
+          //makeitrainOrange();
           document.getElementById("report").innerHTML = "Your carbon footprint is average";
         }
         else if(num>=5){
-          makeitrainOrange();
+          //makeitrainOrange();
           document.getElementById("report").innerHTML = "You output too much carbon, consider using public transportation or buying a tesla";
         }
       return false;
